@@ -1,0 +1,6 @@
+sample1: (4R,6R)-1,7-Dioxaspiro[5.5]undecane-4-ol
+sample2:(6R,9R) -9- Ethyl- I, 7-dioxaspiro[5.5]undecan-4-one
+sample3:(4S,6S)-1,7-Dioxaspiro[5.5]undecane-4-ol
+sample4:(6S,9S)-9-Ethyl-l,7-dioxaspiro[5.5]undecan-4-one
+sample5:(4S,6R)-1,7-Dioxaspiro[5.5]undecan-4-ol
+sample6:(4R,6S)-1,7-Dioxaspiro[5.5]undecan-4-ol
