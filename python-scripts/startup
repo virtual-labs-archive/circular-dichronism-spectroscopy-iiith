@@ -1,0 +1,17 @@
+#!/usr/bin/python
+## Build script
+## inst_i denotes ith instruction
+## if inst_i==0 than instruction is successful else not
+
+# Apache Server Start 
+import os
+inst_1=os.system("service apache2 start")
+
+if(inst_1==0):
+	print "****************"
+	print "Start Successful"
+	print "****************"
+else:
+	print "******************"
+	print "Start Unsuccessful"
+	print "******************"
