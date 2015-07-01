@@ -1,5 +1,4 @@
-{
-    "lab": {
+
         "build_requirements": {
             "platform": {
                 "arch": "i386", 
@@ -83,7 +82,7 @@
                 "Chemical Sciences"
             ], 
             "id": "ccnsb05", 
-            "integration_level": 5, 
+            "integration_level": 6, 
             "name": "Circular Dichronism Spectroscopy", 
             "server-side": true, 
             "status": "Released", 
