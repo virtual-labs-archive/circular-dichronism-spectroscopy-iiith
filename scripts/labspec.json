@@ -1,4 +1,5 @@
-
+{
+"lab": {
         "build_requirements": {
             "platform": {
                 "arch": "i386", 
@@ -92,7 +93,7 @@
             "platform": {
                 "arch": "i386", 
                 "hosting": "dedicated", 
-                "installer": ["sudo apt-get install -y php5 apache2"], 
+                "installer": ["sudo apt-get update","sudo apt-get install -y php5 apache2"], 
                 "lab_actions": {
                     "backup": [], 
                     "clean": [], 

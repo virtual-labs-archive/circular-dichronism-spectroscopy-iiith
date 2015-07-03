@@ -2,7 +2,7 @@
 # or not.
 # This script also tests the backup and restore scripts in case the
 # lab uses any data.
-# Since Computer Programming Lan only needs Apache to run all the time,
+# Since circular-dichronism-spectroscopy lab only needs Apache to run all the time,
 # it will only check for status of Apache2 service.
 # Usage of the Script
 
