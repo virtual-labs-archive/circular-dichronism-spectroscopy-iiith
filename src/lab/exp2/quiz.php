@@ -65,7 +65,7 @@ function getOptions(opt){
 <div id="content">
   <h1 class="boundingBox">Answer The Following Questions</h1><br>
 
-  <form name="quiz" action="quiz.php" method="POST">
+  <form name="quiz" action="quiz1.php" method="POST">
   <ol>
   <table>
   <tr><td width=70%>
@@ -310,7 +310,7 @@ function getOptions(opt){
 <div id="content">
   <h1 class="boundingBox">Answer The Following Questions</h1><br>
 
-  <form name="quiz" action="quiz.php" method="POST">
+  <form name="quiz" action="quiz2.php" method="POST">
   <ol>
   <table>
   <tr><td width=70%>
