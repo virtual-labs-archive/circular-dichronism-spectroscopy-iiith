@@ -1,0 +1,734 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<div id="experiment"> <!-- The Experiment Document Container-->
+
+  <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+  <header id="experiment-header" class="default">
+  
+    <div id="experiment-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or write it in 
+      text-->
+      <img src="../images/logo.jpg" />
+    </div>
+
+    <div id="experiment-header-heading" class="heading">
+      <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+      <a href="../index.html">Circular Dichroism Virtual Lab</a>	
+    </div>
+
+    <!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="experiment-article">
+  
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     </div>
+    
+      <header id="experiment-article-heading" class="heading">
+        <!-- You can add a welcome message or title of the 
+        experiment here -->
+        To Study the effect of Secondary Structure elements on CD spectrum of proteins.
+        <!-- Add any additional element if required with proper 
+        enclosing-->
+      </header>
+
+      <!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+      <nav id="experiment-article-navigation" class="default">
+        <ul id="experiment-article-navigation-menu">
+          <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          <li> tag as shown below-->
+        </ul>
+      </nav>
+
+      <!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+      <div id="experiment-article-sections">
+
+        <!-- First section of the article-->
+        <section id="experiment-article-section-1">
+          
+          <div id="experiment-article-section-1-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab -->
+	    <img src="../images/introduction.jpg" />
+	  </div>	
+          
+          <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+          <div id="experiment-article-section-1-heading" 
+          class="heading">
+            Introduction
+          </div>
+
+          <!-- Write the section content inside a paragraph 
+          element, You can also include images with <img> tag -->
+          <div id="experiment-article-section-1-content" 
+          class="content" align="justify">	
+            <p>
+In the previous experiments, we have seen the effect of anisotropic medium on electromagnetic waves.
+The rationale behind the emergence of the phenomenon of Circular birefringence and Circular Dichroism (CD) from such chiral
+molecules has clearly been described in the earlier experiments. CD, being an intrinsic property of optically active molecules,
+can therefore, be used as a method to identify and study the important optically active molecules of nature. One of the most 
+important optically active molecules is a protein molecule which is an essential biomolecule studied extensively across the 
+scientific community. Since, proteins are chiral in nature (due to their dextrorotary and levorotary components), they also 
+exhibit CD. As a consequence, CD can be used as a tool to study these molecules. </p><br> 
+<p>
+In this experiment we will focus on the structure and function of protein molecules and their relationship with CD. As we proceed, we will be able to understand the different structural features of a protein and how do they affect the CD spectrum of proteins. We will see how CD spectroscopy can be used as a method for the characterization of different protein structures. Precisely, this experiment aims to observe and study characterization of protein structures and folds based on its CD spectrum. The capacity of CD to give a representative structural signature makes it a powerful tool in modern biochemistry with applications that can be found in virtually every field of study.
+</p>
+        </div>
+
+
+      </section>
+
+      <!-- Second section of the article-->
+      <section id="experiment-article-section-2">
+        
+        <div id="experiment-article-section-2-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+				
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+        <div id="experiment-article-section-2-heading" 
+        class="heading">
+          Theory
+        </div>
+
+
+        <!-- Write the section content inside a paragraph 
+        element, we can also include images with <img> tag -->
+        <div id="experiment-article-section-2-content" 
+        class="content" align="justify">
+          <p>
+<strong>Introduction to proteins: 	</strong>
+<p>
+<pre>Biological Significance:</pre>
+</p>
+</p>
+<p>
+
+Proteins are the most predominant organic molecules in all living cells with remarkable biological significance. 
+The structure, behaviour and unique qualities of all living beings are the consequence of the protein they contain.
+Proteins perform the essential and specialized functions in living cells. They are primarily responsible for the 
+structure and strength of the body. According to their biological roles, proteins can be classified into various categories.
+Some proteins act as enzymes, hormones, blood clotting factors, antibodies etc while some proteins are classified as 
+structural (e.g. collagen & keratin), contractile (e.g. actin & myosin), transport (e.g. haemoglobin & myoglobin) and 
+regulatory proteins (e.g. G-proteins). There are also nutrient and storage proteins which are vital for the growth and 
+survival of living cells.These are the dynamic functions of proteins. Due to their vital functions they are also known 
+as the working horses of cell.
+</p>	
+
+<p>
+<pre>Structure of proteins:</pre></p>
+<p>The building block of protein molecules is called as amino acid, which occur in 20 different naturally occurring forms.
+A protein is a chain of amino acids linked together through peptide bonds. All proteins are made up of same set of these
+20 amino acids arranged in a specific order. Various combinations of these amino acids account for a variety of proteins
+occurring naturally. A typical amino acid consist of a primary amino group (-NH2), a carboxyl group (-COOH), a hydrogen atom
+(-H) and a side-chain (-R) group attached to a central α-carbon atom (-C&alpha;). The structure is as shown below. 
+</p>
+<table>
+<tr>
+<td>
+<img src="fig1.jpg"  style="height:300px; width:400px"height="300" width="200">
+</td>
+</tr>
+</table><p>
+Structure of an amino acid<br> (source:<a href="http://www.bothbrainsandbeauty.com/page/3" target="_blank">http://www.bothbrainsandbeauty.com/page/3</a>)</p><br>
+
+<p>
+The variation among the amino acids occurs at the R group, which is different in each amino acid displaying different
+physiochemical properties (e.g. polarity, acidity, basicity, aromaticity, ability to from hydrogen bonds etc). 
+Only Proline differs from this basic structure and has its aliphatic side-chain bonded back onto the amino group 
+and is thus, instead an imino acid. This makes Proline a conformationally rigid molecule.
+</p>
+<br>
+
+<p>
+
+All of the 20 standard amino acids, except for glycine, have four different groups around the C&alpha;
+atom and thus are optically active and chiral in nature. These can be distinguished based on the difference
+in rotation of the place polarised light. Only one of the forms of the isomer (L-isomer) 
+(see <a href="http://en.wikipedia.org/wiki/Chirality_(chemistry)" target="_blank">http://en.wikipedia.org/wiki/Chirality_(chemistry)</a> for more details) is found in proteins.  
+</p>
+
+
+<p>
+<pre>The peptide bond:</pre></p><p>
+As discussed above, a protein is a linear sequence of amino acids linked together by peptide bonds.
+The peptide bond is a covalent bond between the α-amino group of one amino acid and the &alpha;-carboxyl 
+group of another. The formation of peptide bond involves removal of water molecule and hence, amino acids
+are also referred to as residues. The figure below illustrates a peptide bond formation between two amino 
+acid residues with the removal of water molecule.
+</p>
+<p>
+<table>
+<tr>
+<td>
+<img src="fig2.jpg"  style="height:400px; width:500px"height="400" width="500">
+</td>
+</tr>
+</table>
+<p>Peptide bond formation<br> (source: <a href="http://www.bothbrainsandbeauty.com/page/3" target="_blank">http://www.bothbrainsandbeauty.com/page/3</a>)<br>
+</p>
+<br>
+
+<p>
+The peptide bond has partial double bond character. When two amino acids are joined by a peptide bond,
+they form a dipeptide.A tripeptide refers to a chain of three amino acids while tetrapeptide is a sequence
+of four amino acid residues and so on. Addition of further amino acids results in long chains called as oligopeptides
+(upto 25 amino acid residues) and polypeptides (>25 amino acid residues). The backbone conformation of a polypeptide 
+is specified by the rotational angles about the C&alpha; - N bond(&phi;) and C&alpha; - C (&psi;) of each amino acid 
+residues as shown below:<br>
+<table>
+<tr>
+<td>
+<img src="fig3.jpg"  style="height:200px; width:200px"height="200" width="200">
+</td>
+</tr>
+</table>
+<p>Torsional angles <br>(Source:<a href="http://biochem.co/page/3/" target="_blank">http://biochem.co/page/3/</a>)
+</p>
+
+<br>
+<br>
+<p>
+Since amino acids are chiral in nature, they can generate CD signals. In CD spectroscopy, 
+in the far-UV spectral region of wavelengths ranging from 190-250 nm, the chromophore is 
+the peptide bond while in the near-UV spectral region of wavelengths ranging from 250-350 nm,
+the chromophores are the aromatic amino acids and disulfide bonds. Signals in the region from 
+250-270 nm are attributable to phenylalanine residues, signals from 270-290 nm are attributable
+to tyrosine, and those from 280-300 nm are attributable to tryptophan. Disulfide bonds give rise 
+to broad weak signals throughout the near-UV spectrum. The signal strength in the near-UV CD region
+is much weaker than that in the far-UV CD region. Near-UV CD spectra require about 1 ml of protein
+solution with an OD at 280 nm of 0.5 to 1 (which corresponds to 0.25 to 2 mg/ml for most proteins).
+</p>
+
+
+<p>
+<pre>Primary Structure of proteins </pre></p>
+<p>The primary level of structure in a protein is the linear sequence of amino acids as joined together by
+peptide bonds. It refers to the number and order of the amino acids present in the protein. The convention
+for the designation of the order of amino acids is that the N-terminal end (i.e. the end bearing the residue
+with the free α-amino group) is to the left (and the number 1 amino acid) and the C-terminal end 
+(i.e. the end with the residue containing a free α-carboxyl group) is to the right. 
+</p>
+
+
+
+<p>
+<pre>Secondary structure of proteins:</pre></p>
+
+<p>The secondary level of structure in a protein refers to the folding of the local regions of the polypeptide chain.
+Secondary structure arises when various functional groups of the constituting amino acids interact and arrange 
+themselves spatially. This causes the amino acid chain to twist and attain different configurations. 
+The most common types of secondary structure elements are the &alpha;-helices, &beta;-pleated sheets and random coils. 
+</p>
+<br>
+<p>
+The α-helix is a common secondary structure encountered in many proteins (e.g. haemoglobin). The formation of the &alpha;
+-helix is spontaneous and is stabilized by H-bonding between amide hydrogen and carbonyl oxygen of peptide bonds spaced four
+residues apart. This orientation of H-bonding produces a helical coiling of the peptide backbone such that the R-groups
+lie on the exterior of the helix and perpendicular to its axis.	In an &alpha;-helix, as shown below, there are 3.6 amino 
+acids per turn of the helix covering a distance of 5.4 A<sup>o</sup>, and each amino acid residue represents an advance of 1.5 A<sup>o</sup> along the axis of the helix.
+</p>
+
+
+<p>
+<table>
+<tr>
+<td>
+<img src="fig4.jpg"  style="height:400px; width:400px"height="400" width="300">
+</td>
+</tr>
+</table>
+<p>An Alpha-helix<br> (source: <a href="http://student.ccbcmd.edu/~gkaiser/biotutorials/proteins/fg4a.html" target="_blank">http://student.ccbcmd.edu/~gkaiser/biotutorials/proteins/fg4a.html</a>)
+</p>
+
+<br>
+<br>
+<p>
+Not all amino acids favour the formation of the α-helix due to steric constraints of the R-groups.
+Amino acids such as Alanine, Aspartic acid, Glutamic acid, Isoleucine, Leucine and Methionine favour 
+the formation of &alpha;-helices, whereas, Glycine and Proline disrupt the helix. This is particularly true for 
+Proline since it cannot form the correct pattern of hydrogen bonds due to lack of a hydrogen atom on its
+nitrogen atom. For this reason, Proline is often found at the end of the α-helix, where it alters the direction
+of the polypeptide chain and terminates the helix.
+
+</p>
+
+<br>
+
+<p>
+
+The second common secondary structure in proteins is the &beta;-pleated sheets. The  &beta;-sheets are
+composed of two different regions of stretches of at least 5 - 10 amino acids called as 
+&beta;-strands. They could be different polypeptide chains or in different sections of the
+same polypeptide chain. The planarity of the peptide bond forces the polypeptide to be pleated,
+with the side chains protruding above and below the sheet. The folding and alignment of 
+these strands aside one another to form β-sheets is stabilized by H-bonding between amide hydrogen and 
+carbonyl oxygen. Adjacent polypeptide chains in the β-sheets are either parallel or anti-parallel 
+depending on whether they run in the same direction or in opposite directions. In parallel sheets, 
+adjacent peptide chains proceed in the same direction (i.e. the direction of N-terminal to C-terminal ends is the same)
+, whereas, in anti-parallel sheets adjacent chains are aligned in opposite directions. &beta;-sheets can be depicted as shown below.
+</p>
+
+<p>
+<table>
+<tr>
+<td>
+<img src="fig5.jpg"  style="height:400px; width:400px"height="400" width="400">
+</td>
+</tr>
+</table>
+</p>
+<br>
+
+<p>
+<table>
+<tr><td>
+<img src="fig6.jpg"  style="height:450px; width:400px"height="450" width="400">
+</tr>
+</td>
+</table>
+<p>Beta-sheet<br> (source: <a href="http://www.chembio.uoguelph.ca/educmat/phy456/456lec01.htm" target="_blank">
+http://www.chembio.uoguelph.ca/educmat/phy456/456lec01.htm</a>
+and <a href="http://www.cryst.bbk.ac.uk/pps97/course/section3/sheet.html" target="_blank">http://www.cryst.bbk.ac.uk/pps97/course/section3/sheet.html</a>)
+</p>
+
+<br><br>
+<p>
+&beta;-pleated sheets provide strength and rigidity in many structural proteins such as silk fibroin. 
+The ribbon depiction of β-pleated sheets is shown in the figure below.
+</p>
+
+<p>
+<table>
+<tr><td>
+<img src="fig7.jpg"  style="height:200px; width:400px"height="200" width="400">
+</tr>
+</td>
+</table>
+<p>Ribbon depiction of &beta;-pleated sheets.<br><br>
+(source:<a href="http://themedicalbiochemistrypage.org/protein-structure.html" target="_blank">http://themedicalbiochemistrypage.org/protein-structure.html</a>)
+</p>
+
+
+<p>
+Turns are the third secondary structures that serve to reverse the direction of the polypeptide chain in order to
+fold tightly into the compact shape. These turns are often found connecting the ends of anti-parallel &beta;-pleated sheets. 
+They are located primarily on the protein surface and accordingly contain polar and charged residues. Antibody recognition, phosphorylation, glycosylation, and hydroxylation sites are found frequently at or adjacent to turns.
+Regions of the polypeptide chain that are not in a regular secondary structure are said to have a coil or loop conformation. 
+</p>
+
+
+<p>
+We will now see how the presence of each of these structural elements in the protein can affect the CD spectrum of protein. We will also
+observe the CD signal generated which is a representative of these structural elements that can be used to characterise a given protein.
+</p>
+<br>
+
+<p><strong>CD and Proteins:</strong></p>
+
+
+<p>
+
+Having discussed the basic Physics behind CD spectroscopy in <a href="http://pascal.iiit.ac.in/ccnsb/cd/exp3/" target="_blank">experiment 3</a> 
+we are now in a position to understand how naturally occurring molecules like protein shows Circular Dichroism. </p>
+
+</p>
+
+<p>
+
+We now know that in an optically active medium, chromophores cause differential absorption and in turn give rise to Circular
+Dichroism. In case of proteins, the α-carbon acts as a chiral center and hence provides an optically active medium. Proteins
+possess a number of chromophores (peptide bond, aromatic side chain, disulphide bond etc) which can give rise to CD signals. 
+In the far UV region (180-250nm), which corresponds to peptide bond absorption, the CD spectrum can be analysed to give the 
+content of regular secondary structural features such as α-helix and β-sheet. The CD spectrum in the near UV region (250-320 nm)
+reflects the environments of the aromatic amino acid side chains and thus gives information about the tertiary structure of the protein.
+</p>
+
+
+<P>
+To study secondary structures, amide bonds (peptide bonds) are the main source of CD spectra. Molecular Orbital 
+Theory(<a href="http://en.wikipedia.org/wiki/Molecular_orbital_theory" target="_blank">http://en.wikipedia.org/wiki/Molecular_orbital_theory</a>) 
+tells us that each molecule has a set of molecular orbitals and electrons of its atoms are distributed among those orbitals.
+For amide bond, in simplified Molecular Orbital Theory, the 2P<sub>x</sub> orbitals of the nitrogen, carbon and oxygen atoms of the amide 
+linkage are combined to form three orthogonal linear combinations, the &pi;+, &pi;o, and &pi;- bonds. These three orbitals have the plane
+of the peptide bond as there nodal plane. The four &pi; electrons fill the first two molecular orbitals, the π+ which is strongly bonding and
+πo which is almost nonbonding. The remaining two electrons are non-bonding electrons on the oxygen atoms of the amide bond which 
+are conventionally labeled the 2P<sub>y </sub>electrons. These electrons have energy which is close to that of the atomic orbitals of hydrogen.
+</p>
+
+<br>
+<p>
+Now under excitation there may be two types of electronic transition<br>
+1. n - &pi;* centered around 220 nm and<br>
+2. &pi; - &pi;* centered around 190 nm
+</p>
+
+
+<p>
+<table>
+<tr><td>
+<img src="fig8.jpg"  style="height:400px; width:400px"height="350" width="300">
+</tr>
+</td>
+</table>
+<p>
+*Peptide bond<br>
+</p>
+
+
+<br>
+
+<p>
+<strong>1.</strong> The n-&pi;* transition involves the promotion of an electron from the n to the &pi;- orbital. 
+The transition is very weak because the ground and excited states have nodal planes which are perpendicular to one another.
+Thus the n-&pi;* transition is said to be forbidden. The transition is forbidden electronically but permitted magnetically.
+ Thus the absorption band of the n-π* transition is very weak, but the CD bands can be very large.
+<br>
+<strong>2.</strong> The &pi; - &pi;* transition involves the promotion of an electron from the &pi;o to the &pi; orbital and is strong with an
+ extinction coefficient equal to approximately 7100.
+</p>
+
+<br>
+
+<p>
+
+In a system of N non interacting chromophores if one chromophore is excited by the incident light, the energies of the other
+N non interacting molecules are unchanged. Thus, an array of N chromophores would have N-fold degeneracy, as any chromophores
+could be equally excited by the light. But a folded protein the amide is in a continuous array. Therefore, their chromophores 
+are in ordered arrays. So, when electrons are excited they do interact. Now different secondary structures of a protein correspond
+to such different types of arrays. And thus different secondary structures of protein give different types of CD spectra.
+</p>
+<p>
+
+For example, we may have a series of amino acid Alanine (part of a protein) arranged in different forms. 
+They may appear as &alpha;-helix, &beta; sheet or random coils. And for each of these secondary structures 
+we have different CD curves. The following figure shows that. 
+</p>
+
+
+
+
+<p>
+<table>
+<tr><td>
+<img src="fig9.jpg" style="height:400px; width:400px">
+</tr>
+</td>
+</table>
+<p>*CD of Poly L Lysine for different secondary structure.<br>
+</p>
+
+<br>
+<p>
+<pre>Let us now look at CD of different secondary structures</pre>
+</p>
+
+<br>
+
+<p>
+<table>
+<tr><td>
+<img src="fig10.jpg"  style="height:400px; width:400px"height="400" width="400">
+</tr>
+</td>
+</table>
+<p>*CD (blue) and absorption spectra of Random Coil
+Electronic Transitions: p -> p*(positive at 212 nm) ; n -> p*(negative at 195 nm)
+</p>
+
+<br>
+<br>
+<p>
+<table>
+<tr><td>
+<img src="fig11.jpg"  style="height:400px; width:400px"height="400" width="400">
+</tr>
+</td>
+</table>
+<p>*CD (blue) and absorption spectra of &beta; Sheet
+Electronic Transitions: n -> p*(positive at 195 nm) ; p -> p*(negative at 218 nm)
+
+</p>
+
+<br>
+<br>
+<p>
+<table>
+<tr><td>
+<img src="fig12.jpg"  style="height:400px; width:400px"height="400" width="400">
+</td>
+</tr>
+</table>
+<p>*CD (blue) and absorption (dotted) spectra of &alpha; Helix
+Electronic Transitions: p -> p*(positive perpendicular at 192 nm); p -> p*(negative parallel at 209
+nm); n -> p*(negative at 222 nm is red shifted)
+</p>
+<br>
+<br>
+<p>
+*Source:<a href="http://mach7.bluehill.com/proteinc/cd/cdspec.html" target="_blank">http://mach7.bluehill.com/proteinc/cd/cdspec.html</a>
+</p>
+
+<br><br>
+<h2> Goal of The Experiment </h2>
+<br>
+<p>
+In this experiment we are going to measure CD spectrum of different unknown protein samples. These samples are pure secondary structures. User will have an experience to predict the nature of secondary structure from the shape of the CD spectrum.
+</p>
+
+<br><br>
+
+        </div>
+      </section>
+
+
+      <section id="experiment-article-section-3">
+        
+        <div id="experiment-article-section-3-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+     
+        <div id="experiment-article-section-3-heading" 
+        class="heading">
+          Objective
+        </div>
+
+        <div id="experiment-article-section-3-content" 
+        class="content" align="justify">
+          <p>
+
+The purpose of the lab is to give students an idea of the structure of a protein and how CD spectroscopy technique is useful to detect the characteristics of secondary structures of proteins. By performing the experiment a student will</p><br>
+<p>
+<ol>
+<li>understand the level of complexity of protein structure.</li>
+<li>observe CD spectrum of different secondary structures of the protein.</li>
+<li>have an idea about the importance of the N2 purging during measuring the CD spectrometer.</li>
+</ol>
+</p>
+
+
+        </div>
+
+      </section>
+
+
+      <section id="experiment-article-section-4">
+
+        <div id="experiment-article-section-4-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/simulation.jpg" />
+	</div>
+
+        <div id="experiment-article-section-4-heading" 
+        class="heading">
+          Experiment
+        </div>
+
+        <div id="experiment-article-section-4-content" 
+        class="content" align="justify">
+          <p>
+	       <a href="swf.html" target="_blank">Click here to start the simulator.</a>
+	        
+            
+          </p>
+        </div>
+
+      </section>
+
+      <section id="experiment-article-section-5">
+   
+        <div id="experiment-article-section-5-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/manual.jpg" />
+	</div>
+
+        <div id="experiment-article-section-5-heading" 
+        class="heading">
+          Manual
+        </div>
+
+        <div id="experiment-article-section-5-content" 
+        class="content" align="justify">
+          <p>
+<em>Step 1:</em> The screen shows a CD spectrometer with a computer attached to it. There is a drop down menu named "Secondary Structure" and three control TABS on the right named "Measure CD", "Exit Simulation" and "N2 Purge".<br>
+<em>Step 2:</em> You have to power on the CD spectrometer to activate the simulator. The power switch is at the left of the spectrometer.<br>
+<em>Step 3:</em> Now you have to select one sample from the drop down menu named "Secondary Structure".<br>
+<em>Step 4:</em> Now you may Purge the N2 and see what happens in the screen or directly "Measure CD".<br>
+<em>Step 5:</em> If you select "Measure CD" then sample will be taken in special container. Now you have to open the spectrometer's lid . The sample will be automatically kept inside. Then you have close the lid. Opening and closing of the lid is done by clicking a white oval button below the lid.<br>
+<em>Step 6:</em> You will now have the spectra of your sample. Click continue to "identify the secondary structural element" from the spectrum.<br>
+<em>Step 7:</em> If it does not match with any existing spectra then you will be told that some thing has gone wrong. And you will be suggested to do the experiment again. While redoing the experiment you may try N2 purging to observe whether that makes any difference in your experimental result.<br>
+<em>Step 8:</em> Once you receive a curve which matches with one of the spectrum of pure secondary structure of protein then you will be asked guess that structure.<br>
+<em>Step 9:</em> Once you submit your result you will come to know whether your guess is right or wrong.	<br>
+</p>
+
+          </div>
+
+        </section>
+
+        <section id="experiment-article-section-6">
+      
+          <div id="experiment-article-section-6-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/quizzes.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-6-heading" 
+          class="heading">
+            Quizzes
+          </div>
+
+          <div id="experiment-article-section-6-content" 
+          class="content" align="justify">
+            
+            <p>
+Here are two sets of interactive questions to help you to make your understanding more clear.<br>
+After you go through the theory section you should try out the Pre-experiment quiz before you start the actual experiment.<br>
+Once you perform the original experiment you should try out the Post-experiment quiz to have a better insight of the concepts.<br>
+</p>
+<br><p>
+<h2>Pre-experiment Quiz</h2></p>
+<p><a href="./pre_exp_quiz.php">Click here</a> to have a self evaluation.<br>
+</p>
+<br>
+<br><p><h2>Post-experiment Quiz</h2></p>
+<p><a href="./post_exp_quiz.php">Click here</a> to have a self evaluation.<br>
+</p>
+
+          </div>
+
+        </section>
+
+<!--        <section id="experiment-article-section-7">
+	  
+          <div id="experiment-article-section-7-icon" 
+          class="icon">	-->
+	    <!-- Enclose the icon image of your lab. -->
+<!--	    <img src="../images/procedure.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-7-heading" 
+          class="heading">
+	    Procedure
+	  </div>
+	
+          <div id="experiment-article-section-7-content" 
+          class="content">
+	    <p>
+	      Procedure for the experiment is as follows.
+	    </p>
+	  </div>
+	
+        </section>	-->
+			
+		
+        <section id="experiment-article-section-8">
+   
+          <div id="experiment-article-section-8-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/readings.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-8-heading" 
+          class="heading">
+            Further Readings
+          </div>
+
+          <div id="experiment-article-section-8-content" 
+          class="content" align="justify">
+            <ol>
+<li>
+Structure of amino acids<br> 
+<a href="http://www.biomed.curtin.edu.au/biochem/tutorials/AAs/AA.html" target="_blank">http://www.biomed.curtin.edu.au/biochem/tutorials/AAs/AA.html</a><br>
+</li>	
+<li>
+Peptide bond formation<br>
+<a href="http://student.ccbcmd.edu/~gkaiser/biotutorials/proteins/peptide.html" target="_blank">http://student.ccbcmd.edu/~gkaiser/biotutorials/proteins/peptide.html</a><br>
+</li>
+<li>
+An Alpha-helix<br> 
+<a href="http://student.ccbcmd.edu/~gkaiser/biotutorials/proteins/fg4a.html" target="_blank">http://student.ccbcmd.edu/~gkaiser/biotutorials/proteins/fg4a.html</a>
+</li>
+<li>
+Beta-sheet<br>
+<a href="http://www.chembio.uoguelph.ca/educmat/phy456/456lec01.htm" target="_blank">
+http://www.chembio.uoguelph.ca/educmat/phy456/456lec01.htm</a>
+and <br><a href="http://www.cryst.bbk.ac.uk/pps97/course/section3/sheet.html" target="_blank">http://www.cryst.bbk.ac.uk/pps97/course/section3/sheet.html</a>
+</li>
+<li>
+Ribbon depiction of &beta;-pleated sheets.<br>
+<a href="http://themedicalbiochemistrypage.org/protein-structure.html" target="_blank">http://themedicalbiochemistrypage.org/protein-structure.html</a>
+</li>
+</ol>
+          </div>
+
+        </section>
+
+      </div>
+
+
+    <!-- An article can have a sidebar that contain related 
+    links and additional material (however it is kept optional 
+    at this moment) -->
+    <aside id="lab-article-sidebar" class="default">
+      <!-- put the content that you want to appear in the 
+      sidebar -->	
+    </aside>
+
+
+    <!-- Article footer can display related content and 
+    additional links -->						
+    <footer id="lab-article-footer" class="default">
+      <!-- Put the content that you want to appear here -->
+    </footer>
+
+  </article>
+
+
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>		
+
+</body>
+</html>

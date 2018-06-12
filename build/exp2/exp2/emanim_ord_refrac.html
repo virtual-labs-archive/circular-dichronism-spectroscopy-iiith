@@ -1,0 +1,77 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="emanim_ord.css" />
+</head>
+<body>
+	<div id="wrapper">
+	<div id="content">
+		<div id="gif">
+		<image id="wavegif" src="n1=1.20_n2=1.00_angle=0.131_lambda=479.gif" />
+		</div>
+		
+		<div id="controls">
+			<div id="deltaN">
+			n1: Refractive index of left circular polarized light<br>
+			n2: Refractive index of right circular polarized light<br>			
+			<input type="radio" name="wavelength" value="20" onclick="changeImage(value)" checked=true>n1=1.20 n2=1.00<br>
+			<input type="radio" name="wavelength" value="10" onclick="changeImage(value)">n1=1.10 n2=1.00<br>
+			<input type="radio" name="wavelength" value="0" onclick="changeImage(value)">n1=1.00 n2=1.00<br>
+			<input type="radio" name="wavelength" value="-10" onclick="changeImage(value)">n1=1.00 n2=1.10<br>
+			<input type="radio" name="wavelength" value="-20" onclick="changeImage(value)">n1=1.00 n2=1.20<br>
+		</div>
+
+		<div>
+		<table border="0">
+		<tr> <td>Wavelength of light</td><td>:</td><td>479 nm</td></tr>
+		</table>
+		</div>
+		<div>
+		Specific optical rotation:<br><input id="radian" type="text" readonly value="0.157" size="3"/> radian/cm<br/><br/><br/>
+		<a href="emanim_ord_wav.html" style="margin-left:200px;"><input type="submit" value="Next"/></a>
+		
+	</div>
+	</div>
+	
+	<script type="text/javascript">
+	function changeImage(value)
+	{
+		//var imgDest = document.getElementById('wavegif');
+		var imagediv = document.getElementById('gif');
+		var rad = document.getElementById('radian');
+		
+		if (value == "20")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.157_lambda=200.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.20_n2=1.00_angle=0.131_lambda=479.gif" />';
+			rad.value = "0.131";
+		}
+		else if (value == "10")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.105_lambda=298.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.10_n2=1.00_angle=0.065_lambda=479.gif" />';
+			rad.value = "0.065";
+		}
+		else if (value == "0")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.079_lambda=400.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.0_n2=1.0_angle=0.000_lambda=479.gif" />';
+			rad.value = "0.000";
+		}
+		else if (value == "-10")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.063_lambda=498.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.0_n2=1.10_angle=(-)0.065_lambda=479.gif" />';
+			rad.value = "-0.065";
+		}
+		else if (value == "-20")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.052_lambda=600.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.0_n2=1.20_angle=(-)0.131_lambda=479.gif" />';
+			rad.value = "-0.131";
+		}
+	}
+	</script>
+
+		
+</body>
+</html>

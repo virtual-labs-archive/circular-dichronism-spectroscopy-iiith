@@ -1,0 +1,98 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="emanim_ord.css" />
+</head>
+<body>
+<center><font color="blue"><h2>Effect of wavelength on plane polarized light passing through an anisotropic medium</h2></font></center>
+	<div id="wrapper">
+	<div id="content">
+		<div id="gif">
+		<image id="wavegif" src="lambda=200.gif" height="450" />
+		</div>
+		
+		<div id="controls" style="height:410;">
+			<div id="wavelength">
+			<b>Wavelength</b> <br/>
+			<input type="radio" name="wavelength" value="200" onclick="changeImage(value)" checked=true> 200 nm<br>
+			<input type="radio" name="wavelength" value="300" onclick="changeImage(value)"> 300 nm<br>
+			<input type="radio" name="wavelength" value="400" onclick="changeImage(value)"> 400 nm<br>
+			<input type="radio" name="wavelength" value="500" onclick="changeImage(value)"> 500 nm<br>
+			<input type="radio" name="wavelength" value="600" onclick="changeImage(value)"> 600 nm<br>
+		</div>
+
+		<div>
+		<b>Refractive index of:</b>
+		<table border="0">
+		<tr> <td>Left circular polarized light</td><td>:</td><td>1.05</td></tr>
+		<tr> <td>Right circular polarized light</td><td>:</td><td>1.00</td></tr>
+		</table>
+		<b>Extinction Coefficient of:</b>
+		<table border="0">
+		<tr> <td>Left extinction coefficient</td><td>:</td><td>0.15</td></tr>
+		<tr> <td>Right extinction coefficient</td><td>:</td><td>0.00</td></tr>
+		</table>
+		</div>
+		<div>
+		<b>Angle of rotation:</b><br><input id="radian" type="text" readonly value="0.079" size="3"/> radian/cm<br>
+		<b>Ellipticity:</b><br><input id="ellip" type="text" readonly value="0.537" size="3"/><br>		
+
+<br><br>
+		<table width="400">
+		<tr>
+		<td><a href="emanim_cd_refrac.html"><input type="submit" value="Back"/></a></td>
+		<td><a href="../emanim_ord_refrac.html"><input type="submit" value="Dispersive Effect"/></a></td>
+		</tr>
+		</table>
+
+	</div>
+	</div>
+	
+	<script type="text/javascript">
+	function changeImage(value)
+	{
+		//var imgDest = document.getElementById('wavegif');
+		var imagediv = document.getElementById('gif');
+		var rad = document.getElementById('radian');
+		var ell = document.getElementById('ellip');
+		
+		if (value == "200")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.157_lambda=200.gif");
+			imagediv.innerHTML='<image id="wavegif" src="lambda=200.gif"  height="450" />';
+			rad.value = "0.537";
+		}
+		else if (value == "300")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.105_lambda=298.gif");
+			imagediv.innerHTML='<image id="wavegif" src="lambda=298.gif"  height="450" />';
+			rad.value = "0.053";
+		}
+		else if (value == "400")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.079_lambda=400.gif");
+			imagediv.innerHTML='<image id="wavegif" src="lambda=400.gif"  height="450" />';
+			rad.value = "0.039";
+		}
+		else if (value == "500")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.063_lambda=498.gif");
+			imagediv.innerHTML='<image id="wavegif" src="lambda=498.gif"  height="450" />';
+			rad.value = "0.032";
+		}
+		else if (value == "600")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.052_lambda=600.gif");
+			imagediv.innerHTML='<image id="wavegif" src="lambda=600.gif"  height="450" />';
+			rad.value = "0.026";
+		}
+	}
+	</script>
+
+</div>		
+
+<br/><br>
+
+<center><h2>Change the values of wavelength and observe the effect.</h2></center>
+<center>You have seen the dispersive effect only for selected parameters. You may <a href="../emanim_cd.py">CLICK HERE</a>  to download a package where you can select your own parameters.</center>
+</body>
+</html>

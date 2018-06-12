@@ -1,0 +1,115 @@
+<html>
+<head>
+<script type="text/javascript" src="Jmol.js"></script>
+<style type="text/css">
+*{
+	font-family: Verdana, calibri;
+}
+
+#content{
+	margin : auto;
+	width: 900px;
+}
+
+.boundingBox{	
+	text-align:center;
+	background:#cccfff;
+	padding: 15px 2px 15px 2px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+
+}
+.boundingBoxTop{	
+	text-align:center;
+	background:#cccfff;
+	padding: 5px 2px 5px 2px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+
+	width:400px;
+	height:300px;
+}
+.boundingBoxBottom{	
+	text-align:center;
+	background:#cccfff;
+	padding: 5px 2px 5px 2px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+
+	width:400px;
+	height:150px;
+}
+#leftSection{
+	float:left;
+	width:400px;
+}
+#rightSection{
+	float:left;
+	margin-left: 95px;
+	width:400px;
+}
+#start{
+	clear:left;
+	float:right;
+	margin-left:20px;
+	width:150px;
+	color: green;
+}
+#start a{
+	color:green;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+<div id="content">
+  <h1 class="boundingBox">Select the Chemicals</h1>
+  <form action="page5.php" method="POST">
+  <table cellspacing=15 cellpadding=10>
+    <tr>
+      <td width=3%><input type="checkbox" name="chemical[]" value="sds"></td>
+      <td width=20% class="boundingBox">30% Sodium Dodecyl Sulphate (SDS)</td>
+      <td width=35%><img src="sds.png" width=315px height=100px></td>
+      <td width=43% class="boundingBox">Molecular Formula : NaC<sub>12</sub>H<sub>25</sub>SO<sub>4</sub><br>Molar Mass : 288 g mol<sup>-1</sup><br>Density : 1.01 g cm<sup>-3</sup><br>Melting Point : 206<sup>o</sup> C</td>
+    </tr>
+    <tr>
+      <td width=3%><input type="checkbox" name="chemical[]" value="urea"></td>
+      <td width=20% class="boundingBox">10M Urea</td>
+      <td width=35% align="center"><img src="urea.png" width=200px height=100px></td>
+      <td width=43% class="boundingBox">Molecular Formula : CH<sub>4</sub>N<sub>2</sub>O<br>Molar Mass : 60.06 mol<sup>-1</sup><br>Density : 1.32 g cm<sup>-3</sup><br>Melting Point : 133-135<sup>o</sup> C</td>
+    </tr>
+    <tr>
+      <td width=3%><input type="checkbox" name="chemical[]" value="guhcl"></td>
+      <td width=20% class="boundingBox">8M Guanidine Hydrochloride (GuHCl)</td>
+      <td width=35% align="center"><img src="guhcl.png" width=200px height=100px></td>
+      <td width=43% class="boundingBox">Molecular Formula : CN<sub>3</sub>H<sub>5</sub>.HCl<br>Molar Mass : 95.54 g mol<sup>-1</sup><br>Density : 1.183-1.188 g cm<sup>-3</sup><br>Melting Point : 178-185<sup>o</sup> C</td>
+    </tr>
+    <tr>
+      <td width=3%><input type="checkbox" name="chemical[]" value="tfa"></td>
+      <td width=20% class="boundingBox">4M Trifluoroacetic Acid (TFA) </td>
+      <td width=35% align="center"><img src="tfa.png" width=200px height=100px></td>
+      <td width=43% class="boundingBox">Molecular Formula : C<sub>2</sub>HF<sub>3</sub>O<sub>2</sub><br>Molar Mass : 114.02 g mol<sup>-1</sup><br>Density : 1.489 g cm<sup>-3</sup> at 20<sup>o</sup> C<br>Melting Point : -15.4<sup>o</sup> C</td>
+    </tr>
+
+  </table> 
+  <div id="start">
+   <input type="submit" value="PROCEED" class="boundingBox" style="width:150px; color:green; font-weight:bold;">
+  </div>
+  </form>
+
+</div>
+</body>
+</html>
+

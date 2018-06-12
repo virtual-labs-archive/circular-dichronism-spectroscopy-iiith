@@ -1,0 +1,81 @@
+	<html>
+<head>
+<link rel="stylesheet" type="text/css" href="emanim_cd_refrac.css" />
+</head>
+<body>
+<center><h2><font color="blue">Change in State of Polarization Due to Change in Difference of Extinction Coefficients</font></h2></center>
+	<div id="wrapper">
+	<div id="content">
+		<div id="gif">
+		<image id="wavegif" src="del=(-).30.gif" />
+		</div>
+		
+		<div id="controls">
+			<div id="deltaN">
+			e1: Extinction coefficient of left circular polarized light<br>
+			e2: Extinction coefficient of right circular polarized light<br>			
+			<input type="radio" name="wavelength" value="20" onclick="changeImage(value)" checked=true>e1=0.00 e2=0.30<br>
+			<input type="radio" name="wavelength" value="10" onclick="changeImage(value)">e1=0.00 e2=0.15<br>
+			<input type="radio" name="wavelength" value="0" onclick="changeImage(value)">e1=0.00 e2=0.00<br>
+			<input type="radio" name="wavelength" value="-10" onclick="changeImage(value)">e1=0.15 e2=0.00<br>
+			<input type="radio" name="wavelength" value="-20" onclick="changeImage(value)">e1=0.30 e2=0.00<br>
+		</div>
+
+		<div>
+		<table border="0">
+		<tr> <td><b>Wavelength of light</b></td><td>:</td><td>400 nm</td></tr>
+		</table>
+		</div>
+		<div>
+		<b>Angle of rotation:</b><br><input id="radian" type="text" readonly value="0.039" size="3"/> radian/cm<br>
+		<b>Ellipticity:</b><br><input id="ellip" type="text" readonly value="-0.834" size="3"/> <br>				
+
+		<a href="emanim_cd_wav.html" style="margin-left:200px;"><input type="submit" value="Next"/></a>
+	</div>
+	</div>
+	
+	<script type="text/javascript">
+	function changeImage(value)
+	{
+		//var imgDest = document.getElementById('wavegif');
+		var imagediv = document.getElementById('gif');
+		var rad = document.getElementById('ellip');
+		
+		if (value == "20")
+		{
+			//imgDest.setAttribute("src", "images\e1=1.10_e2=1.00_angle=0.157_lambda=200.gif");
+			imagediv.innerHTML='<image id="wavegif" src="del=(-).30.gif" />';
+			rad.value = "-0.834";
+		}
+		else if (value == "10")
+		{
+			//imgDest.setAttribute("src", "images\e1=1.10_e2=1.00_angle=0.105_lambda=298.gif");
+			imagediv.innerHTML='<image id="wavegif" src="del=(-).15.gif" />';
+			rad.value = "-0.537";
+		}
+		else if (value == "0")
+		{
+			//imgDest.setAttribute("src", "images\e1=1.10_e2=1.00_angle=0.079_lambda=400.gif");
+			imagediv.innerHTML='<image id="wavegif" src="del=0.0.gif" />';
+			rad.value = "0.000";
+		}
+		else if (value == "-10")
+		{
+			//imgDest.setAttribute("src", "images\e1=1.10_e2=1.00_angle=0.063_lambda=498.gif");
+			imagediv.innerHTML='<image id="wavegif" src="del=0.15.gif" />';
+			rad.value = "0.537";
+		}
+		else if (value == "-20")
+		{
+			//imgDest.setAttribute("src", "images\e1=1.10_e2=1.00_angle=0.052_lambda=600.gif");
+			imagediv.innerHTML='<image id="wavegif" src="del=0.30.gif" />';
+			rad.value = "0.834";
+		}
+	}
+	</script>
+
+</div>
+<br/>
+<center><h2>Change the values of e1,e2 and observe the effect.</h2></center>	
+</body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="emanim_ord.css" />
+</head>
+<body>
+	<div id="content">
+		<div id="gif">
+		<image id="wavegif" src="images\n1=1.10_n2=1.00_angle=0.157_lambda=200.gif" />
+		</div>
+		
+		<div id="controls">
+			<div id="wavelength">
+			Wavelength <br>
+			<input type="radio" name="wavelength" value="200" onclick="changeImage(value)" default> 200 nm<br>
+			<input type="radio" name="wavelength" value="300" onclick="changeImage(value)"> 300 nm<br>
+			<input type="radio" name="wavelength" value="400" onclick="changeImage(value)"> 400 nm<br>
+			<input type="radio" name="wavelength" value="500" onclick="changeImage(value)"> 500 nm<br>
+			<input type="radio" name="wavelength" value="600" onclick="changeImage(value)"> 600 nm<br>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+	function changeImage(value)
+	{
+		//var imgDest = document.getElementById('wavegif');
+		var imagediv = document.getElementById('gif');
+		
+		if (value == "200")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.157_lambda=200.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.10_n2=1.00_angle=0.157_lambda=200.gif" />';
+		}
+		else if (value == "300")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.105_lambda=298.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.10_n2=1.00_angle=0.105_lambda=298.gif" />';
+		}
+		else if (value == "400")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.079_lambda=400.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.10_n2=1.00_angle=0.079_lambda=400.gif" />';
+		}
+		else if (value == "500")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.063_lambda=498.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.10_n2=1.00_angle=0.063_lambda=498.gif" />';
+		}
+		else if (value == "600")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.052_lambda=600.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.10_n2=1.00_angle=0.052_lambda=600.gif" />';
+		}
+	}
+	</script>
+
+		
+</body>
+</html>
