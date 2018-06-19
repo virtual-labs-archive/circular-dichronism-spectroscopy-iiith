@@ -1,0 +1,555 @@
+<!-- This file needs to be edited by the lab developer to suit
+the requirements of their lab in particular.-->
+
+<!-- Add class="default" to include any element as it is
+specified in default.html. 
+Do not include class="default" to the elements that you want to
+edit -->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+
+<div id="experiment"> <!-- The Experiment Document Container-->
+
+  <!-- The lab Header contains the logo and the name of the lab,
+  usually displayed on the top of the page-->
+
+  <header id="experiment-header" class="default">
+  
+    <div id="experiment-header-logo" class="logo">
+      <!-- Enclose the logo image of your lab or write it in 
+      text-->
+      <img src="../images/logo.jpg" />
+    </div>
+
+    <div id="experiment-header-heading" class="heading">
+      <!-- Write the name of your lab and link it to the home 
+      page of your lab (h1 tag is preferred while writing your 
+      lab name)-->
+      <a href="../index.html">Circular Dichroism Virtual Lab</a>	
+    </div>
+
+    <!-- Add any additional element you want to add to the lab 
+    header, For example : Help (Enclosing them with suitable 
+    div is recommended)-->
+
+  </header>
+
+
+  <!-- The lab article is the main content area where all the 
+  experiment content sits-->
+  <article id="experiment-article">
+  
+    <!-- The lab article has an header, optional navigational 
+    menu, number of sections, an optional sidebar and a closing 
+    footer-->
+     <div id="experiment-article-breadcrumb" class="breadcrumb">
+     </div>
+    
+      <header id="experiment-article-heading" class="heading">
+        <!-- You can add a welcome message or title of the 
+        experiment here -->
+        To study the Circular Dichroism of some substances with chiral chromophores.
+        <!-- Add any additional element if required with proper 
+        enclosing-->
+      </header>
+
+      <!-- Navigation menu is useful to organize the view of 
+      multiple sections inside the article-->
+      <nav id="experiment-article-navigation" class="default">
+        <ul id="experiment-article-navigation-menu">
+          <!-- The menu can be dynamically generated to contain 
+          the headings of your sections or instead write the 
+          menu items of your choice individually enclosedu in 
+          <li> tag as shown below-->
+        </ul>
+      </nav>
+
+      <!-- All the sections of your lab or experiment can be 
+      enclosed together with a div element as shown below-->
+      <div id="experiment-article-sections">
+
+        <!-- First section of the article-->
+        <section id="experiment-article-section-1">
+          
+          <div id="experiment-article-section-1-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab -->
+	    <img src="../images/introduction.jpg" />
+	  </div>	
+          
+          <!-- The heading for the section can be enclosed in a 
+          div tag. -->
+          <div id="experiment-article-section-1-heading" 
+          class="heading">
+            Introduction
+          </div>
+
+          <!-- Write the section content inside a paragraph 
+          element, You can also include images with <img> tag -->
+          <div id="experiment-article-section-1-content" 
+          class="content" align="justify">	
+            <p>
+In Experiment 3 we have seen variation in ORD spectra for different chiral molecules. In this experiment we will observe variation of CD spectra for chiral molecules with chromophores. We will aslo try to understand the relation between anomalous ORD spectra and CD spectra.
+</p>
+<p>A CD spectra can be used as an identifying signature of chiral molecules where chromophore is present. For large chiral molecules like protein CD spectroscopy is used as a primary tool for structural characterization.
+</p>
+        </div>
+
+
+      </section>
+
+      <!-- Second section of the article-->
+      <section id="experiment-article-section-2">
+        
+        <div id="experiment-article-section-2-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/theory.jpg" />
+	</div>
+				
+        <!-- The heading for the section can be enclosed in a 
+        div tag. -->
+        <div id="experiment-article-section-2-heading" 
+        class="heading">
+          Theory
+        </div>
+
+
+        <!-- Write the section content inside a paragraph 
+        element, we can also include images with <img> tag -->
+        <div id="experiment-article-section-2-content" 
+        class="content" align="justify">
+          <p>
+Circular dichroism leads to the transformation of plane polarized light into elliptically polarized light, 
+and is directly related to differential absorbance of LEft Circularly Polarised (LCP) and Right Circularly Polarised (RCP) components of plane polarized light, by 
+chiral substances which also absorb light. The plot of the variation in the ellipticity, of the elliptically 
+polarized light, as a function of wavelength, gives us the CD spectrum. In order to understand circular dichroism,
+and its role in CD spectroscopy, we need to visit some definitions and concepts.
+</p>
+	
+	
+
+<br>
+<p><h2>CD spectroscopy – Concepts, measurable parameters and quantitative relationships</h2></p><br>
+<p>As we have discussed CD is the direct consequence of differential absorbance. So studying variation of
+differential absorbance with variation in wavelength is a good approach. We define delta absorbance,
+a parameter to study CD, as<br>
+<b>&Delta;A=A<sub>L</sub>-A<sub>R</sub></b><br>
+where A<sub>L</sub> and A<sub>R</sub> represents the absorbance of LCP light and RCP light respectively.
+</p>
+
+
+<p>
+Though the the difference in absorption to be measured is very small (usually a few 1/100ths to a few 1/10th
+of a percent), but it can be determined quite accurately.
+</p>
+
+<p>
+A circular dichroism signal can be positive or negative, depending on whether left circularly polarised light 
+is absorbed to a greater extent than right circularly polarised light (CD signal positive) or to a lesser extent
+(CD signal negative). An example CD spectrum of a sample with multiple CD peaks is shown below, demonstrating how
+CD varies as a function of wavelength, and that a CD spectrum may exhibit both positive and negative peaks.
+</p>
+<br>
+<p>
+As discussed above, from  Beer-Lambert law we can express delta absorbance as 
+<br>
+<b>
+&Delta;A= (ε<sub>L</sub> - ε<sub>R</sub>)Cl<br></b>
+where, C is the molar concentration, and l is the path length in centimetres(cm).<br>
+
+Therefore we can plot the difference in molar extinction coefficient of LCP and RCP light
+<b>&Delta;ε= ε<sub>L</sub> - ε<sub>R</sub></b> as a function of wavelength. Thus we have an intrinsic
+property called molar circular dichroism, &Delta;ε to represent CD spectroscopy.
+</p>
+<br>
+
+<p>
+Upto now we have seen CD as an intrinsic property of the molecule but in many practical applications of
+circular dichroism (CD), the measured CD may also be a function of temperature, concentration, and the 
+chemical environment, including solvents. So in those cases we should follow another way to represent CD 
+spectra. To do that instead of looking at the cause of circular dichroism (differential absorbance) we may
+look at the effect of CD (ellipticity).
+</p>
+<br>
+
+<p>
+Hence we define ellipticity of polarization as the inverse tangent of the quotient of the minor and major axes
+of the elliptically polarised wave. And it is derived as,
+</p>
+
+
+<table border="0">
+  <tr>
+    <td style="width:500px;"><img src="ev.gif" style="height:250px; width:300px;">source:<a href="http://en.wikipedia.org/wiki/File:Electric_Vectors_1.png" target="_blank">http://en.wikipedia.org/wiki/File:Electric_Vectors_1.png</a></td>
+
+    <td><img src="el.gif" style="height:250px; width:250px;"></td>
+  </tr>
+</table>
+
+<p>
+where<br>
+E<sub>R </sub>and E<sub>L</sub> are the magnitudes of the electric field vectors of the right-circularly and left-circularly polarized light, respectively.
+</p>
+<br>
+<p>
+This ellipticity will depend on the path length and concentration of medium. So we can think of specific ellipticity, 
+ellipticity per unit length per unit concentration.We can think of an intrinsic property in terms of this ellipticity,
+molar ellipticity ([&theta;]), which is simply the product of molecular weight of the molecule and specific ellipticity.
+<br>
+<b>[&theta;] = M x specific ellipticity x 10<sup>-2</sup></b>
+</p>
+
+<br>
+
+<p>
+Now the Molar circular dichroism, Δε, and molar ellipticity, [&theta;], are readily interconvertable by the equation:<br>
+<b>[&theta;] = 3298.2 &epsilon;</b>
+</p>
+
+<p>
+After having discussed different measurable parameters related to CD spectra lets have a look at how it is measured in 
+practical situations.
+</p>
+<br>
+
+<p>
+Circular dichroism spectra are measured using a CD spectrometer which is a highly specialised derivative of an ordinary
+absorption spectrometer. CD spectrometers measure alternately the absorption of left and right circularly polarised lights,
+usually at a frequency of 50 kHz, and then calculate the CD signal. CD is reported either in units of &Delta;A, the delta
+absorbance (is discussed below), or in degrees ellipticity. [θ], the molar ellipticity in deg cm2 dmol<sup>–1</sup> = 3298.2 &delta;A 
+which is also discussed in detail below.
+</p>
+
+<br>
+<br>
+
+<p>
+<strong>Note:</strong> One should be very careful with the concentration of the sample taken. There is a misconception
+that more the concentration, better the CD signal which is totally incorrect. However, in reality, the reverse happens.
+If the concentration is more, less light will pass through it and it will give the CD signal with error. Therefore, an 
+optimal concentration of the sample should be chosen to obtain an error-free CD signal.
+</p>
+<br>
+
+
+
+<p>
+
+<br><p><h2>CD vs ORD : their interrelation and preference of CD over ORD</h2></p><br>
+<p>We have seen Circular dichroism as an absorptive effect and ORD as a dispersive effect of interaction between an EM wave and an anisotropic medium. We also have discussed the measuring  parameters of ORD and CD. In case of ORD the molecular rotation [M]<sup>T</sup><sub>λ</sub> and in case of CD the molar ellipticity [θ]<sup>T</sup><sub>λ</sub> are the most important parameters. They are also interrelated by <a href="http://en.wikipedia.org/wiki/Kramers%E2%80%93Kronig_relation" target="_blank">Kroning-Kramer transformation</a> as shown below.
+</p>
+
+<table border="0">
+<tr>
+<td>
+<center>
+<img src="km.gif" height="200" width="200"></td>
+</center>
+</tr>
+</table>
+
+<br>
+<p>
+So we can easily switch between CD and ORD data. One must keep in mind that ORD is observed in any molecule which is
+chiral but CD is observed only when there is a chromophore. So when CD is observed a cotton effect must be present there.
+</p>
+
+<br>
+
+<p>
+But in practical purpose we prefer CD data over ORD data. There are several reasons behind doing that<br>
+<ul>
+<li>
+In ORD if several cotton effects are present then it is difficult to estimate their magnitude, sign and wavelength. 
+In CD spectra it is much easier to interpret. There exists an one to one correspondence between absorption peaks and 
+CD signals.
+</li>
+<li>
+CD spectra has a better sensitivity.
+</li>
+<li>
+Since CD spectra is not spread over a wide range like ORD spectra, it has a better resolution.
+</li>
+</ul>
+</p>
+<br>
+<h2>Goal of The Experiment</h2>
+<p>
+In this experiment we have two samples. They are enantiomers of each other. We will learn to determine which one is R and which one is S enantiomer. After that we will measure the ORD and CD spectrum of both the samples. Once we get all the spectrum we will try to match the ORD curve of a smaple to its own CD graph.
+</p>
+<br>
+
+        </div>
+      </section>
+
+
+      <section id="experiment-article-section-3">
+        
+        <div id="experiment-article-section-3-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab. -->
+	  <img src="../images/objective.jpg" />
+	</div>
+     
+        <div id="experiment-article-section-3-heading" 
+        class="heading">
+          Objective
+        </div>
+
+        <div id="experiment-article-section-3-content" 
+        class="content" align="justify">
+                 <p>
+        The purpose of this lab is to make students familiar with different types of CD
+        spectra obtained from different chiral substances with chromophore. By doing this experiment user will be able to,
+</p>
+
+<p>
+<ol>
+<br><li>
+Develop an understanding about assigning R and S configuration to chiral structures.
+<br><br>
+</li>
+<li>
+Be familiar with the nature of CD curves of samples of different chirality.
+<br><br>
+</li>
+
+<li>
+Understand relation between CD and ORD spectra obtained from the same sample.
+<br><br>
+</li>
+        </ol>
+ </p>
+<br>
+
+        </div>
+
+      </section>
+
+
+      <section id="experiment-article-section-4">
+
+        <div id="experiment-article-section-4-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/simulation.jpg" />
+	</div>
+
+        <div id="experiment-article-section-4-heading" 
+        class="heading">
+          Experiment
+        </div>
+
+        <div id="experiment-article-section-4-content" 
+        class="content" align="justify">
+          <p>Simulation Under Construction.
+	        <!--<a href="exp/" target="_blank">Click here</a> to start the experiment.-->
+<br>
+	        
+            
+          </p>
+        </div>
+
+      </section>
+
+      <section id="experiment-article-section-5">
+   
+        <div id="experiment-article-section-5-icon" 
+        class="icon">
+	  <!-- Enclose the icon image of your lab.-->
+	  <img src="../images/manual.jpg" />
+	</div>
+
+        <div id="experiment-article-section-5-heading" 
+        class="heading">
+          Manual
+        </div>
+
+        <div id="experiment-article-section-5-content" 
+        class="content" align="justify">
+          <p>
+The experiment is composed of a number of steps. One may follow the steps given below to successfully run the experiment.<br><br>
+<ol>
+<li>
+In the “Understanding Structure of Chiral Molecules” step you will be given two samples.
+You can click on any sample and study its structure and conformation.
+</li>
+
+<li>
+Once you are satisfied you can click “Next” to go to the next Step.
+</li>
+
+<li>
+Next Step is “Assigning R & S Configuration”. Here you are given structures of four samples as individual Jmol applets.
+The Table “Jmol Instructions” provides guide lines to study those structures efficiently. You have to decide whether 
+the structure is a R or a S enantiomer and select the corresponding Radio Button for each structure. Once you decide and 
+choose your option for both the structures you should submit your answer. You will be informed whether your decission is correct or
+not. You can skip this step at any point of time by clicking “Skip”.  To decide whether the structure is R or S you may follow the
+ following instructions
+</li>
+
+<ol>
+<li>
+First look at the atoms that are directly attached to the stereocenter of the compound.  
+A substituent that has a higher atomic number takes precedence over a substituent that has a lower atomic number.
+Hydrogen is the lowest priority substituent.  When you are dealing with isotopes, the atom with the higher atomic mass
+received higher priority.<br>
+
+<em>Note: </em> The lowest priority substituents should always go away from the viewer<br>
+<em>Note: </em>Keep in mind that priority is determined by the first point of difference along the two similar substituent chains. After you have reached the first point of difference, the rest of the chain is irrelevant.
+<br>
+</li>
+<li>
+When you have two substituents that have equal rank, we proceed along the two respective substituent chains until we
+find a point of difference.
+</li>
+<li>
+When you are looking for the first point of difference on similar substituent chains, 
+you may encounter branching.  If there is branching, we choose the branch that is higher in priority.
+When the two substituents have similar branches, you rank the elements within the branches until you reach a point of difference.
+</li>
+<li>
+When you come across double and triple bonds, treat them as if they were the same number of single bonds connected to that atom instead.
+Think of the atoms as duplicated or triplicated:
+</li>
+<li>
+After all your substituents have been prioritized in the correct manner, you can name it either R or S.  
+By putting the lowest priority substituent in the back (dashed line), the rotation of the other three substituents
+ will help determine whether the molecule is R or S. In the order of priority (1, 2, 3), if the molecule rotates to the right, 
+ it is an R. Conversely, if it rotates to the left, it is considered a S.
+</li>
+</ol>
+<li>
+In next step you will be measuring the CD and ORD spectrum of different chiral samples. First click the "Switch the CD mode" button.
+ The samples will be activated for selecting. Select any sample and "Measure ORD". The ORD spectrum will be shown on screen. You can
+  "Measure Again" or skip the step.
+</li>
+<li>
+Next Step is the "Analysis" step. At the left side of your screen you are given a picture of two ORD spectrum. And there is one CD 
+spectrum example on the screen. Now you have to decide among the ftwo given ORD spectra, with which the given CD spectra corresponds
+ with. Once you select one graph you should submit your result and you will informed whether you are right or wrong. If you do correctly
+  you can load the next sample. You can skip this step also at any point of time by clicking “Skip”. Otherwise you will be asked to perform the analysis for both the samples. 
+</li>
+
+</ol>
+</p>	
+
+          </div>
+
+        </section>
+
+        <section id="experiment-article-section-6">
+      
+          <div id="experiment-article-section-6-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/quizzes.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-6-heading" 
+          class="heading">
+            Quizzes
+          </div>
+
+          <div id="experiment-article-section-6-content" 
+          class="content" align="justify">
+            
+            <p>
+              <h3><a href="quiz.php" target="_self">Click here</a> to have a self evaluation.<br></h3>            </p>
+
+          </div>
+
+        </section>
+
+<!--        <section id="experiment-article-section-7">
+	  
+          <div id="experiment-article-section-7-icon" 
+          class="icon">	-->
+	    <!-- Enclose the icon image of your lab. -->
+<!--	    <img src="../images/procedure.jpg" />
+	  </div>
+	
+          <div id="experiment-article-section-7-heading" 
+          class="heading">
+	    Procedure
+	  </div>
+	
+          <div id="experiment-article-section-7-content" 
+          class="content">
+	    <p>
+	      Procedure for the experiment is as follows.
+	    </p>
+	  </div>
+	
+        </section>	-->
+			
+		
+        <section id="experiment-article-section-8">
+   
+          <div id="experiment-article-section-8-icon" 
+          class="icon">
+	    <!-- Enclose the icon image of your lab.-->
+	    <img src="../images/readings.jpg" />
+	  </div>
+
+          <div id="experiment-article-section-8-heading" 
+          class="heading">
+            Further Readings
+          </div>
+
+          <div id="experiment-article-section-8-content" 
+          class="content" align="justify">
+            <ol>	
+<li>Circular Dichroism 
+<br><a href="http://en.wikipedia.org/wiki/Circular_dichroism" target="_blank">http://en.wikipedia.org/wiki/Circular_dichroism</a></li>		
+<li>Introduction to Circular Dichroism Spectroscopy: 
+<br><a href="http://www.photophysics.com/circulardichroism.php"target="_blank">http://www.photophysics.com/circulardichroism.php</a>
+<br><a href="http://www.ruppweb.org/cd/cdtutorial.htm"target="_blank">http://www.ruppweb.org/cd/cdtutorial.htm</a></li>
+<li>Circular dichroism (CD) units and conversions 
+<br><a href="http://www.photophysics.com/cdunits.php"target="_blank">http://www.photophysics.com/cdunits.php</a></li>
+<li> Principle of operation of a circular dichroism spectrometer
+<br><a href ="http://www.photophysics.com/cdoperation.php" target="_blank">http://www.photophysics.com/cdoperation.php</a></li>
+<li> Classification of Polarization
+<br><a href="http://hyperphysics.phy-astr.gsu.edu/hbase/phyopt/polclas.html"target="_blank">http://hyperphysics.phy-astr.gsu.edu/hbase/phyopt/polclas.html</a></li>
+<li>To try your own EMANIM animation of the CD concepts with variable parameters, Please download the software from:
+<br><a href="http://www.enzim.hu/~szia/emanim/emanim.htm" target="_blank">http://www.enzim.hu/~szia/emanim/emanim.htm</a>
+</ol>
+          </div>
+
+        </section>
+
+      </div>
+
+
+    <!-- An article can have a sidebar that contain related 
+    links and additional material (however it is kept optional 
+    at this moment) -->
+    <aside id="lab-article-sidebar" class="default">
+      <!-- put the content that you want to appear in the 
+      sidebar -->	
+    </aside>
+
+
+    <!-- Article footer can display related content and 
+    additional links -->						
+    <footer id="lab-article-footer" class="default">
+      <!-- Put the content that you want to appear here -->
+    </footer>
+
+  </article>
+
+
+  <!-- Links to other labs, about us page can be kept the lab 
+  footer-->
+  <footer id="lab-footer" class="default">
+    <!-- Put the content here-->
+  </footer>
+
+</div>		
+
+</body>
+</html>

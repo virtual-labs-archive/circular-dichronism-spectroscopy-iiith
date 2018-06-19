@@ -1,0 +1,87 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="emanim_ord.css" />
+</head>
+<body>
+<center><h2><font color="blue">Change in Optical Rotation Due to Change in Wavelength</font></h2></center>
+	<div id="wrapper">
+	<div id="content">
+		<div id="gif">
+		<image id="wavegif" src="n1=1.10_n2=1.00_angle=0.157_lambda=200.gif" />
+		</div>
+		
+		<div id="controls">
+			<div id="wavelength">
+			<b>Wavelength</b> <br>
+			<input type="radio" name="wavelength" value="200" onclick="changeImage(value)" checked=true> 200 nm<br>
+			<input type="radio" name="wavelength" value="300" onclick="changeImage(value)"> 300 nm<br>
+			<input type="radio" name="wavelength" value="400" onclick="changeImage(value)"> 400 nm<br>
+			<input type="radio" name="wavelength" value="500" onclick="changeImage(value)"> 500 nm<br>
+			<input type="radio" name="wavelength" value="600" onclick="changeImage(value)"> 600 nm<br>
+		</div>
+
+		<div>
+		<b>Refractive index of:</b>
+		<table border="0">
+		<tr> <td>Left circular polarized light</td><td>:</td><td>1.10</td></tr>
+		<tr> <td>Right circular polarized light</td><td>:</td><td>1.00</td></tr>
+		</table>
+		</div>
+		<div>
+		<b>Specific optical rotation:</b><br><input id="radian" type="text" readonly value="0.157" size="3"/> radian/cm<br/><br/><br/>
+		<table width="400">
+		<tr>
+		<td><a href="emanim_ord_refrac.html"><input type="submit" value="Back"/></a></td>
+		<td><a href="part2_cd/emanim_cd_refrac.html"><input type="submit" value="Absorptive Effect"/></a></td>
+		</tr>
+		</table>
+		
+	</div>
+	</div>
+	
+	<script type="text/javascript">
+	function changeImage(value)
+	{
+		//var imgDest = document.getElementById('wavegif');
+		var imagediv = document.getElementById('gif');
+		var rad = document.getElementById('radian');
+		
+		if (value == "200")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.157_lambda=200.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.10_n2=1.00_angle=0.157_lambda=200.gif" />';
+			rad.value = "0.157";
+		}
+		else if (value == "300")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.105_lambda=298.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.10_n2=1.00_angle=0.105_lambda=298.gif" />';
+			rad.value = "0.105";
+		}
+		else if (value == "400")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.079_lambda=400.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.10_n2=1.00_angle=0.079_lambda=400.gif" />';
+			rad.value = "0.079";
+		}
+		else if (value == "500")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.063_lambda=498.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.10_n2=1.00_angle=0.063_lambda=498.gif" />';
+			rad.value = "0.063";
+		}
+		else if (value == "600")
+		{
+			//imgDest.setAttribute("src", "images\n1=1.10_n2=1.00_angle=0.052_lambda=600.gif");
+			imagediv.innerHTML='<image id="wavegif" src="n1=1.10_n2=1.00_angle=0.052_lambda=600.gif" />';
+			rad.value = "0.052";
+		}
+	}
+	</script>
+
+</div>		
+<br/>
+<center><h2>Change the values of wavelength and observe the effect.</h2></center>
+<center>You have seen the dispersive effect only for selected parameters. You may <a href="emanim_ord.py">CLICK HERE</a> to download a package where you can select your own parameters.</center>
+</body>
+</html>
