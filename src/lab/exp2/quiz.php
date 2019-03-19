@@ -236,7 +236,7 @@ function getOptions(opt){
 	<?php 
 	if($_POST){
 		echo "</td><td>";
-		if($_POST['q6'] == "C"){
+		if($_POST['q7'] == "C"){
 			echo "<span style='color:green'>(".$_POST['q7'].") IS CORRECT</span>";
 		}
 		else if($_POST['q7'] == "B" || $_POST['q7'] == "A" || $_POST['q7'] == "D"){
