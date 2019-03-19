@@ -108,11 +108,11 @@ function getOptions(opt){
 		if($_POST['q2'] == "B"){
 			echo "<span style='color:green'>(".$_POST['q2'].") IS CORRECT</span>";
 		}
-		else if($_POST['q1'] == "A" || $_POST['q1'] == "C" || $_POST['q1'] == "D"){
-			echo "<span style='color:red'>(".$_POST['q1'].") IS NOT CORRECT ! CORRECT answer is (B).</span>";
+		else if($_POST['q2'] == "A" || $_POST['q2'] == "C" || $_POST['q2'] == "D"){
+			echo "<span style='color:red'>(".$_POST['q2'].") IS NOT CORRECT ! CORRECT answer is (B).</span>";
 		}
 		else{
-			echo "<span style='color:red'>(".$_POST['q1'].") DIDN'T ATTEMPT.</span>";
+			echo "<span style='color:red'>(".$_POST['q2'].") DIDN'T ATTEMPT.</span>";
 		}
 	}
 	?>
@@ -134,11 +134,11 @@ function getOptions(opt){
 		if($_POST['q3'] == "A"){
 			echo "<span style='color:green'>(".$_POST['q3'].") IS CORRECT</span>";
 		}
-		else if($_POST['q1'] == "B" || $_POST['q1'] == "C" || $_POST['q1'] == "D"){
-			echo "<span style='color:red'>(".$_POST['q1'].") IS NOT CORRECT ! CORRECT answer is (A).</span>";
+		else if($_POST['q3'] == "B" || $_POST['q3'] == "C" || $_POST['q3'] == "D"){
+			echo "<span style='color:red'>(".$_POST['q3'].") IS NOT CORRECT ! CORRECT answer is (A).</span>";
 		}
 		else{
-			echo "<span style='color:red'>(".$_POST['q1'].") DIDN'T ATTEMPT.</span>";
+			echo "<span style='color:red'>(".$_POST['q3'].") DIDN'T ATTEMPT.</span>";
 		}
 	}
 	?>
@@ -160,11 +160,11 @@ function getOptions(opt){
 		if($_POST['q4'] == "B"){
 			echo "<span style='color:green'>(".$_POST['q4'].") IS CORRECT</span>";
 		}
-		else if($_POST['q1'] == "A" || $_POST['q1'] == "C" || $_POST['q1'] == "D"){
-			echo "<span style='color:red'>(".$_POST['q1'].") IS NOT CORRECT ! CORRECT answer is (B).</span>";
+		else if($_POST['q4'] == "A" || $_POST['q4'] == "C" || $_POST['q4'] == "D"){
+			echo "<span style='color:red'>(".$_POST['q4'].") IS NOT CORRECT ! CORRECT answer is (B).</span>";
 		}
 		else{
-			echo "<span style='color:red'>(".$_POST['q1'].") DIDN'T ATTEMPT.</span>";
+			echo "<span style='color:red'>(".$_POST['q4'].") DIDN'T ATTEMPT.</span>";
 		}
 	}
 	?>
@@ -186,11 +186,11 @@ function getOptions(opt){
 		if($_POST['q5'] == "D"){
 			echo "<span style='color:green'>(".$_POST['q5'].") IS CORRECT</span>";
 		}
-		else if($_POST['q1'] == "B" || $_POST['q1'] == "C" || $_POST['q1'] == "A"){
-			echo "<span style='color:red'>(".$_POST['q1'].") IS NOT CORRECT ! CORRECT answer is (D).</span>";
+		else if($_POST['q5'] == "B" || $_POST['q5'] == "C" || $_POST['q5'] == "A"){
+			echo "<span style='color:red'>(".$_POST['q5'].") IS NOT CORRECT ! CORRECT answer is (D).</span>";
 		}
 		else{
-			echo "<span style='color:red'>(".$_POST['q1'].") DIDN'T ATTEMPT.</span>";
+			echo "<span style='color:red'>(".$_POST['q5'].") DIDN'T ATTEMPT.</span>";
 		}
 	}
 	?>
@@ -200,23 +200,23 @@ function getOptions(opt){
      <li>
 	 The optimum path length generally required for:
       <ol type="A">
-	 <li><input type="radio" name="q5" value="A">Far UV CD spectra.</li>
-	 <li><input type="radio" name="q5" value="B">Near UV CD spectra.</li>
-	 <li><input type="radio" name="q5" value="C">None of the above are correct.</li>
-	 <li><input type="radio" name="q5" value="D">Both (A) and (B) are correct.</li>
+	 <li><input type="radio" name="q6" value="A">Far UV CD spectra.</li>
+	 <li><input type="radio" name="q6" value="B">Near UV CD spectra.</li>
+	 <li><input type="radio" name="q6" value="C">None of the above are correct.</li>
+	 <li><input type="radio" name="q6" value="D">Both (A) and (B) are correct.</li>
       </ol>
     </li>
 	<?php 
 	if($_POST){
 		echo "</td><td>";
-		if($_POST['q5'] == "A"){
-			echo "<span style='color:green'>(".$_POST['q5'].") IS CORRECT</span>";
+		if($_POST['q6'] == "A"){
+			echo "<span style='color:green'>(".$_POST['q6'].") IS CORRECT</span>";
 		}
-		else if($_POST['q1'] == "B" || $_POST['q1'] == "C" || $_POST['q1'] == "D"){
-			echo "<span style='color:red'>(".$_POST['q1'].") IS NOT CORRECT ! CORRECT answer is (A).</span>";
+		else if($_POST['q6'] == "B" || $_POST['q6'] == "C" || $_POST['q6'] == "D"){
+			echo "<span style='color:red'>(".$_POST['q6'].") IS NOT CORRECT ! CORRECT answer is (A).</span>";
 		}
 		else{
-			echo "<span style='color:red'>(".$_POST['q1'].") DIDN'T ATTEMPT.</span>";
+			echo "<span style='color:red'>(".$_POST['q6'].") DIDN'T ATTEMPT.</span>";
 		}
 	}
 	?>
