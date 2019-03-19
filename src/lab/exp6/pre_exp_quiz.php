@@ -83,8 +83,11 @@ function getOptions(opt){
 		if($_POST['q1'] == "C"){
 			echo "<span style='color:green'>(".$_POST['q1'].") IS CORRECT</span>";
 		}
-		else{
+		else if($_POST['q1'] == "B" || $_POST['q1'] == "A" || $_POST['q1'] == "D"){
 			echo "<span style='color:red'>(".$_POST['q1'].") IS NOT CORRECT ! CORRECT answer is (C).</span>";
+		}
+		else{
+			echo "<span style='color:red'>(".$_POST['q1'].") DIDN'T ATTEMPT.</span>";
 		}
 	}
 	?>
@@ -105,8 +108,11 @@ function getOptions(opt){
 		if($_POST['q2'] == "A"){
 			echo "<span style='color:green'>(".$_POST['q2'].") IS CORRECT</span>";
 		}
+		else if($_POST['q1'] == "B" || $_POST['q1'] == "C" || $_POST['q1'] == "D"){
+			echo "<span style='color:red'>(".$_POST['q1'].") IS NOT CORRECT ! CORRECT answer is (A).</span>";
+		}
 		else{
-			echo "<span style='color:red'>(".$_POST['q2'].") IS NOT CORRECT ! CORRECT answer is (A).</span>";
+			echo "<span style='color:red'>(".$_POST['q1'].") DIDN'T ATTEMPT.</span>";
 		}
 	}
 	?>
@@ -128,8 +134,11 @@ function getOptions(opt){
 		if($_POST['q3'] == "B"){
 			echo "<span style='color:green'>(".$_POST['q3'].") IS CORRECT</span>";
 		}
+		else if($_POST['q1'] == "A" || $_POST['q1'] == "C" || $_POST['q1'] == "D"){
+			echo "<span style='color:red'>(".$_POST['q1'].") IS NOT CORRECT ! CORRECT answer is (B).</span>";
+		}
 		else{
-			echo "<span style='color:red'>(".$_POST['q3'].") IS NOT CORRECT ! CORRECT answer is (B).</span>";
+			echo "<span style='color:red'>(".$_POST['q1'].") DIDN'T ATTEMPT.</span>";
 		}
 	}
 	?>
