@@ -139,7 +139,7 @@ function getOptions(opt){
 			echo "<span style='color:red'>(".$_POST['q3'].") IS NOT CORRECT ! CORRECT answer is (D).</span>";
 		}
 		else{
-			echo "<span style='color:red'>(".$_POST['q1'].") DIDN'T ATTEMPT.</span>";
+			echo "<span style='color:red'>(".$_POST['q3'].") DIDN'T ATTEMPT.</span>";
 		}
 	}
 	?>
