@@ -1,4 +1,3 @@
-<<<<<<< .mine
 <html>
 <head>
 <style type="text/css">
@@ -243,7 +242,7 @@ function getOptions(opt){
 </body>
 </html>
 
-=======
+
 <html>
 <head>
 <style type="text/css">
@@ -467,4 +466,4 @@ function getOptions(opt){
 </body>
 </html>
 
->>>>>>> .r3
+
