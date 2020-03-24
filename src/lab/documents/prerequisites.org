@@ -1,0 +1,103 @@
+#+Title: Virtual Labs installation on Local machine
+#+Date: 20th March 2020
+
+* Local Virtual Labs Installation to run the Simulations
+
+** Download and install virtualbox in your OS    2
+   1. Installation steps for Windows    2
+   2. Installation steps for CentOS    4
+   3. Installation steps for Ubuntu    4
+   4. Installation steps for Mac OS    5
+** Import custom Virtual labs OS image in VirtualBox    5
+   1. Steps to import Ubuntu (.ova) file in VirtualBox
+   2. Recommended Settings for the imported Box   
+
+
+* Introduction
+  This document contains the instructions to run the simulations. A
+  laptop/desktop should have Virtualbox running the customized Ubuntu OS
+  which has all the required software dependencies to run the
+  simulations. So please follow the below steps: 
+**  Download and install virtualbox in your OS 
+    - Click for Windows installation steps 
+    - Click for CentOS installation steps 
+    - Click for Ubuntu installation steps 
+    - Click for Mac OS installation steps 
+
+** Import our customised Ubuntu OS in virtualbox  
+*** Download and install virtualbox in your OS
+**** Installation steps for Windows
+     - Download VirtualBox from the link
+       https://www.virtualbox.org/wiki/Downloads
+
+     - Wait for the .exe file to be downloaded, then double click on it to install.
+     - Setup Window will appear, click on Run button to install
+     - Click on the Next button to install the application.
+     - Click on Next button and follow the instructions to complete the installation
+     - After the installation, final window will be 
+     - After installation, ensure that a VirtualBox icon is created on the desktop.
+
+*** Steps to import Ubuntu OS
+**** Installation steps for CentOS
+     - Open Terminal (ctrl+alt+t)
+     - Download RPM package with the below command:
+       #+BEGIN_EXAMPLE
+       wget http://download.virtualbox.org/virtualbox/5.1.6/VirtualBox-5.1-5.1.6_110634_el6-1.x86_64.rpm
+       #+END_EXAMPLE
+    - Install VirtualBox with the below command:
+       #+BEGIN_EXAMPLE
+       sudo rpm -i VirtualBox-5.1-5.1.6_110634_el6-1.x86_64.rpm
+       #+END_EXAMPLE
+     - Make sure virtualbox is installed with the command:
+       #+BEGIN_EXAMPLE
+       Virtualbox -V
+       #+END_EXAMPLE
+     - Steps to import Ubuntu OS
+**** Installation steps for Ubuntu
+     - Open Terminal (ctrl+alt+t)
+     - Type below command to download VirtualBox:
+       #+BEGIN_EXAMPLE
+       wget http://download.virtualbox.org/virtualbox/5.2.0/virtualbox-5.2_5.2.0-118431~Ubuntu~trusty_amd64.deb
+       #+END_EXAMPLE
+     - Install VirtualBox with the below command:
+       #+BEGIN_EXAMPLE
+       sudo dpkg -i virtualbox-5.2_5.2.0-118431~Ubuntu~trusty_amd64.deb
+       #+END_EXAMPLE
+     - Use the below command to check whether a virtualbox is installed or not.
+       #+BEGIN_EXAMPLE
+       Virtualbox -V
+       #+END_EXAMPLE
+     - Steps to import Ubuntu OS
+**** Installation steps for Mac OS
+     - Download OS X hosts VirtualBox. 
+     - Double click on downloaded file .dmg.
+     - Follow the instructions and install it.
+     - Steps to import Ubuntu OS
+
+** Import custom Virtual labs OS image in VirtualBox
+*** Steps to import Ubuntu ( .ova file )in VirtualBox :
+    - Click on the link to download the Ubuntu OS and save the ubuntu-14.04-college-cloud.ova in your machine. 
+    - Please note that import steps need to be done only once.
+    - Click on the VirtualBox Icon to open.
+    - Open Virtualbox.
+    - click on File ¡ú Import Appliances
+    - Browse the file window is displayed
+    - Select the downloaded file by clicking on the browse button
+    - Then the import setup gets started
+    - Click on next to start importing the downloaded file 
+    - The importing process looks as below:
+    - This may take 5 to 10 minutes to complete the import process.
+    - After the completion of importing, you can find the ubuntu-virtualbox in the VirtualBox window
+    - Double click on the ubuntu-virtualbox.
+    - You can find the Ubuntu OS, it prompts to enter a password.
+    - Password for the OS is ¡°cc¡±.
+
+*NOTE:*
+    Select the ubuntu-14.04-college-cloud from the VirtualBox window and allocate the Processor and Memory/RAM size from the Settings menu appropriately based on the system configuration of the user machine.
+** Recommended Settings for the imported box
+   - Processor --> 1
+   - Memory/RAM size --> 2GB or 4GB according to how much your ram is. 
+   - Please change the network setting in your Virtualization software
+     for the imported image from Bridge adapter to Nat.
+   - Do not update or upgrade any application in it. 
+   - Click on the link to use the labs.
