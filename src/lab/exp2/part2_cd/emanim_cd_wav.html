@@ -1,48 +1,51 @@
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="emanim_ord.css" />
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
+<link href="emanim_ord.css" rel="stylesheet" type="text/css"/>
 </head>
-<body>
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
 <center><font color="blue"><h2>Effect of wavelength on plane polarized light passing through an anisotropic medium</h2></font></center>
 	<div id="wrapper">
 	<div id="content">
 		<div id="gif">
-		<image id="wavegif" src="lambda=200.gif" height="450" />
+		<img height="450" id="wavegif" src="lambda=200.gif"/>
 		</div>
 		
 		<div id="controls" style="height:410;">
 			<div id="wavelength">
 			<b>Wavelength</b> <br/>
-			<input type="radio" name="wavelength" value="200" onclick="changeImage(value)" checked=true> 200 nm<br>
-			<input type="radio" name="wavelength" value="300" onclick="changeImage(value)"> 300 nm<br>
-			<input type="radio" name="wavelength" value="400" onclick="changeImage(value)"> 400 nm<br>
-			<input type="radio" name="wavelength" value="500" onclick="changeImage(value)"> 500 nm<br>
-			<input type="radio" name="wavelength" value="600" onclick="changeImage(value)"> 600 nm<br>
+			<input checked="true" name="wavelength" onclick="changeImage(value)" type="radio" value="200"/> 200 nm<br/>
+			<input name="wavelength" onclick="changeImage(value)" type="radio" value="300"/> 300 nm<br/>
+			<input name="wavelength" onclick="changeImage(value)" type="radio" value="400"/> 400 nm<br/>
+			<input name="wavelength" onclick="changeImage(value)" type="radio" value="500"/> 500 nm<br/>
+			<input name="wavelength" onclick="changeImage(value)" type="radio" value="600"/> 600 nm<br/>
 		</div>
 
 		<div>
 		<b>Refractive index of:</b>
 		<table border="0">
-		<tr> <td>Left circular polarized light</td><td>:</td><td>1.05</td></tr>
+		<tbody><tr> <td>Left circular polarized light</td><td>:</td><td>1.05</td></tr>
 		<tr> <td>Right circular polarized light</td><td>:</td><td>1.00</td></tr>
-		</table>
+		</tbody></table>
 		<b>Extinction Coefficient of:</b>
 		<table border="0">
-		<tr> <td>Left extinction coefficient</td><td>:</td><td>0.15</td></tr>
+		<tbody><tr> <td>Left extinction coefficient</td><td>:</td><td>0.15</td></tr>
 		<tr> <td>Right extinction coefficient</td><td>:</td><td>0.00</td></tr>
-		</table>
+		</tbody></table>
 		</div>
 		<div>
-		<b>Angle of rotation:</b><br><input id="radian" type="text" readonly value="0.079" size="3"/> radian/cm<br>
-		<b>Ellipticity:</b><br><input id="ellip" type="text" readonly value="0.537" size="3"/><br>		
+		<b>Angle of rotation:</b><br/><input id="radian" readonly="" size="3" type="text" value="0.079"/> radian/cm<br/>
+		<b>Ellipticity:</b><br/><input id="ellip" readonly="" size="3" type="text" value="0.537"/><br/>		
 
-<br><br>
+<br/><br/>
 		<table width="400">
-		<tr>
+		<tbody><tr>
 		<td><a href="emanim_cd_refrac.html"><input type="submit" value="Back"/></a></td>
 		<td><a href="../emanim_ord_refrac.html"><input type="submit" value="Dispersive Effect"/></a></td>
 		</tr>
-		</table>
+		</tbody></table>
 
 	</div>
 	</div>
@@ -90,9 +93,10 @@
 
 </div>		
 
-<br/><br>
+<br/><br/>
 
 <center><h2>Change the values of wavelength and observe the effect.</h2></center>
 <center>You have seen the dispersive effect only for selected parameters. You may <a href="../emanim_cd.py">CLICK HERE</a>  to download a package where you can select your own parameters.</center>
-</body>
-</html>
+
+
+</div></body></html>
