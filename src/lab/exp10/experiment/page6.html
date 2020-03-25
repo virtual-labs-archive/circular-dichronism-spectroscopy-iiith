@@ -1,5 +1,8 @@
-<html>
-<head>
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
 <style type="text/css">
 *{
 	font-family: Verdana, calibri;
@@ -51,15 +54,15 @@ function getOptions(opt){
 }
 </script>
 </head>
-<body>
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
 <div id="content">
-  <h1 class="boundingBox">Select the Parameters</h1><br>
+  <h1 class="boundingBox">Select the Parameters</h1><br/>
 
-  <form name="paramSelect" action="graph.php" method="POST">
-  <table align="center" cellspacing="20px" cellpadding="10px">
-	<tr>
+  <form action="graph.php" method="POST" name="paramSelect">
+  <table align="center" cellpadding="10px" cellspacing="20px">
+	<tbody><tr>
 	<td>Select Starting Temperature :</td>
-  	<td><select name="start" class="boundingBox" id="start" onchange="getOptions(this.options[this.selectedIndex].value)">
+  	<td><select class="boundingBox" id="start" name="start" onchange="getOptions(this.options[this.selectedIndex].value)">
 	<script type="text/javascript">
 	  for(var i = 5 ; i <= 100 ; i+=5){
 	    document.write("<option value='"+i+"'>"+i+" C</option>");
@@ -68,7 +71,7 @@ function getOptions(opt){
 	</select></td></tr>
 	<tr>
 	<td>Select Final Temperature :</td>
-	<td><select name="end" class="boundingBox" id="end">
+	<td><select class="boundingBox" id="end" name="end">
 	<script type="text/javascript">
 	   for(var i = 5 ; i <= 100 ; i+=5){
 		if(i == 100){	
@@ -82,18 +85,19 @@ function getOptions(opt){
 	</select></td></tr>
 	<tr>
 	<td>Select Step Size :</td>
-	<td><select name="gap" class="boundingBox">
+	<td><select class="boundingBox" name="gap">
 	<script type="text/javascript">
 	  for(var i = 5 ; i < 25 ; i+=5){
 	    document.write("<option value='"+i+"'>"+i+" C</option>");
 	  }
 	</script>
 	</select></td></tr>	
-  </table>
+  </tbody></table>
 	
-	<input type="submit" id="go" class="boundingBox" value="Measure CD Spectra">
+	<input class="boundingBox" id="go" type="submit" value="Measure CD Spectra"/>
 
-</div>
-</body>
-</html>
+</form></div>
 
+
+
+</body></html>

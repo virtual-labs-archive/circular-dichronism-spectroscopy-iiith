@@ -1,34 +1,37 @@
-	<html>
-<head>
-<link rel="stylesheet" type="text/css" href="emanim_cd_refrac.css" />
+<html><head><!--Google Tag Manager--><script class="gtm">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W59SWTR');</script><!--End Google Tag Manager-->
+<link href="emanim_cd_refrac.css" rel="stylesheet" type="text/css"/>
 </head>
-<body>
+<body><!--Google Tag Manager (noscript)--><noscript class="gtm"><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-W59SWTR" style="display:none;visibility:hidden" width="0"></iframe></noscript><!--End Google Tag Manager (noscript)-->
 <center><h2><font color="blue">Change in State of Polarization Due to Change in Difference of Extinction Coefficients</font></h2></center>
 	<div id="wrapper">
 	<div id="content">
 		<div id="gif">
-		<image id="wavegif" src="del=(-).30.gif" />
+		<img id="wavegif" src="del=(-).30.gif"/>
 		</div>
 		
 		<div id="controls">
 			<div id="deltaN">
-			e1: Extinction coefficient of left circular polarized light<br>
-			e2: Extinction coefficient of right circular polarized light<br>			
-			<input type="radio" name="wavelength" value="20" onclick="changeImage(value)" checked=true>e1=0.00 e2=0.30<br>
-			<input type="radio" name="wavelength" value="10" onclick="changeImage(value)">e1=0.00 e2=0.15<br>
-			<input type="radio" name="wavelength" value="0" onclick="changeImage(value)">e1=0.00 e2=0.00<br>
-			<input type="radio" name="wavelength" value="-10" onclick="changeImage(value)">e1=0.15 e2=0.00<br>
-			<input type="radio" name="wavelength" value="-20" onclick="changeImage(value)">e1=0.30 e2=0.00<br>
+			e1: Extinction coefficient of left circular polarized light<br/>
+			e2: Extinction coefficient of right circular polarized light<br/>			
+			<input checked="true" name="wavelength" onclick="changeImage(value)" type="radio" value="20"/>e1=0.00 e2=0.30<br/>
+			<input name="wavelength" onclick="changeImage(value)" type="radio" value="10"/>e1=0.00 e2=0.15<br/>
+			<input name="wavelength" onclick="changeImage(value)" type="radio" value="0"/>e1=0.00 e2=0.00<br/>
+			<input name="wavelength" onclick="changeImage(value)" type="radio" value="-10"/>e1=0.15 e2=0.00<br/>
+			<input name="wavelength" onclick="changeImage(value)" type="radio" value="-20"/>e1=0.30 e2=0.00<br/>
 		</div>
 
 		<div>
 		<table border="0">
-		<tr> <td><b>Wavelength of light</b></td><td>:</td><td>400 nm</td></tr>
-		</table>
+		<tbody><tr> <td><b>Wavelength of light</b></td><td>:</td><td>400 nm</td></tr>
+		</tbody></table>
 		</div>
 		<div>
-		<b>Angle of rotation:</b><br><input id="radian" type="text" readonly value="0.039" size="3"/> radian/cm<br>
-		<b>Ellipticity:</b><br><input id="ellip" type="text" readonly value="-0.834" size="3"/> <br>				
+		<b>Angle of rotation:</b><br/><input id="radian" readonly="" size="3" type="text" value="0.039"/> radian/cm<br/>
+		<b>Ellipticity:</b><br/><input id="ellip" readonly="" size="3" type="text" value="-0.834"/> <br/>				
 
 		<a href="emanim_cd_wav.html" style="margin-left:200px;"><input type="submit" value="Next"/></a>
 	</div>
@@ -77,5 +80,6 @@
 </div>
 <br/>
 <center><h2>Change the values of e1,e2 and observe the effect.</h2></center>	
-</body>
-</html>
+
+
+</div></body></html>
